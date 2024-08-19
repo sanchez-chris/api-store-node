@@ -27,14 +27,15 @@ A brief description of what the API does and its purpose.
    npm install
 
 ## Usage
-1. **Start the server**  
+1. **Start the server**
+
   npm start
   The server will start on the port specified in your environment variables or default to 3000.
 
-2. **Make API requests**
+3. **Make API requests**
    
-  You can use tools like Postman or Insomnia to test the endpoints.
-  There are also docs available with Swagger at http://localhost:3001/api/v1/docs/
+    You can use tools like Postman or Insomnia to test the endpoints.
+    There are also docs available with Swagger at http://localhost:3001/api/v1/docs/
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
