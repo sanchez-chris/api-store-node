@@ -4,12 +4,27 @@ const productsRouter = require('./products.router');
 const usersRouter = require('./users.router');
 const categoriesRouter = require('./categories.router');
 
+function routerApi(app) {
+  const router = express.Router();
+  app.use('/api/v1', router);
+  router.use('/products', productsRouter);
+  router.use('/users', usersRouter);
+  router.use('/categories', categoriesRouter);
+}
+
+module.exports = routerApi;
 /**
  * @openapi
- * /api/v1/categories:
- *   get:
+* /api/v1/categories:
+*   get:
  *     tags:
  *       - Categories
+ *     parameters:
+ *       - in: query
+ *         name: id
+ *         schema:
+ *           type: string
+ *         description: The ID of the category
  *     responses:
  *       200:
  *         description: OK
@@ -25,6 +40,7 @@ const categoriesRouter = require('./categories.router');
  *                   type: array
  *                   items:
  *                     type: object
+ *
  *   post:
  *     tags:
  *       - Categories
@@ -43,6 +59,32 @@ const categoriesRouter = require('./categories.router');
  *                   type: array
  *                   items:
  *                     type: object
+ * /api/v1/categories/{categoryId}:
+ *   get:
+ *     tags:
+ *       - Categories
+ *     parameters:
+ *       - in: query
+ *         name: id
+ *         schema:
+ *           type: string
+ *         description: The ID of the category
+ *     responses:
+ *       200:
+ *         description: OK
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 status:
+ *                   type: string
+ *                   example: OK
+ *                 data:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *
  *   patch:
  *     tags:
  *       - Categories
@@ -99,6 +141,25 @@ const categoriesRouter = require('./categories.router');
  *                   items:
  *                     type: object
  *   post:
+ *     tags:
+ *       - Products
+ *     responses:
+ *       200:
+ *         description: OK
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 status:
+ *                   type: string
+ *                   example: OK
+ *                 data:
+ *                   type: array
+ *                   items:
+ *                     type: object
+  * /api/v1/products/{productId}:
+ *   get:
  *     tags:
  *       - Products
  *     responses:
@@ -189,6 +250,25 @@ const categoriesRouter = require('./categories.router');
  *                   type: array
  *                   items:
  *                     type: object
+ * /api/v1/users/{userId}:
+ *   get:
+ *     tags:
+ *       - Users
+ *     responses:
+ *       200:
+ *         description: OK
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 status:
+ *                   type: string
+ *                   example: OK
+ *                 data:
+ *                   type: array
+ *                   items:
+ *                     type: object
  *   patch:
  *     tags:
  *       - Users
@@ -226,14 +306,3 @@ const categoriesRouter = require('./categories.router');
  *                   items:
  *                     type: object
  */
-
-function routerApi(app) {
-  const router = express.Router();
-  app.use('/api/v1', router);
-  router.use('/products', productsRouter);
-  router.use('/users', usersRouter);
-  router.use('/categories', categoriesRouter);
-
-}
-
-module.exports = routerApi;
