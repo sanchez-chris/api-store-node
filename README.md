@@ -33,7 +33,7 @@ A brief description of what the API does.
    
     You can use tools like Postman or Insomnia to test the endpoints.
     
-    There are also docs available with Swagger at localhost:3001/api/v1/docs/ (not yet completed)
+    There are also docs available with Swagger at localhost:3001/api/v1/docs (not yet completed)
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
