@@ -1,4 +1,4 @@
-# Store with Node
+# Store with Node.js
 
 A brief description of what the API does and its purpose.
 
