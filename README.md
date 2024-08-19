@@ -10,10 +10,6 @@ A brief description of what the API does and its purpose.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Environment Variables](#environment-variables)
-- [Testing](#testing)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Installation
