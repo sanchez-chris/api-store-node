@@ -20,7 +20,7 @@ A brief description of what the API does and its purpose.
 
 2. **Navigate into the project directory**
 
-cd project-name
+   cd project-name
 
 4. **Install dependencies**
 
