@@ -59,6 +59,12 @@ module.exports = routerApi;
  *   post:
  *     tags:
  *       - Categories
+ *     request body:
+ *       - in: query
+ *         name: categoryId
+ *         schema:
+ *           type: string
+ *         description: The ID of the category
  *     responses:
  *       200:
  *         description: OK
