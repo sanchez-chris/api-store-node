@@ -19,12 +19,6 @@ module.exports = routerApi;
 *   get:
  *     tags:
  *       - Categories
- *     parameters:
- *       - in: query
- *         name: id
- *         schema:
- *           type: string
- *         description: The ID of the category
  *     responses:
  *       200:
  *         description: OK
@@ -37,9 +31,30 @@ module.exports = routerApi;
  *                   type: string
  *                   example: OK
  *                 data:
- *                   type: array
- *                   items:
- *                     type: object
+ *                   type: object
+ *                   properties:
+ *                     id:
+ *                       type: string
+ *                       example: "733a76e6-d9cf-4953-868b-1d43463712f8"
+*                     name:
+ *                       type: string
+ *                       example: "Refined Granite Soap"
+ *       5XX:
+ *         description: FAILED
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 status:
+ *                   type: string
+ *                   example: FAILED
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     error:
+ *                       type: string
+ *                       example: "Error message"
  *
  *   post:
  *     tags:
@@ -65,7 +80,7 @@ module.exports = routerApi;
  *       - Categories
  *     parameters:
  *       - in: query
- *         name: id
+ *         name: categoryId
  *         schema:
  *           type: string
  *         description: The ID of the category
@@ -81,9 +96,31 @@ module.exports = routerApi;
  *                   type: string
  *                   example: OK
  *                 data:
- *                   type: array
- *                   items:
- *                     type: object
+ *                   type: object
+ *                   properties:
+ *                     id:
+ *                       type: string
+ *                       example: "733a76e6-d9cf-4953-868b-1d43463712f8"
+*                     name:
+ *                       type: string
+ *                       example: "Refined Granite Soap"
+ *       5XX:
+ *         description: FAILED
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 status:
+ *                   type: string
+ *                   example: FAILED
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     error:
+ *                       type: string
+ *                       example: "Error message"
+ *
  *
  *   patch:
  *     tags:
