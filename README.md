@@ -32,6 +32,7 @@ A brief description of what the API does.
 2. **Make API requests**
    
     You can use tools like Postman or Insomnia to test the endpoints.
+    
     There are also docs available with Swagger at http://localhost:3001/api/v1/docs/
 
 ## Contributing
