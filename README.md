@@ -19,9 +19,11 @@ A brief description of what the API does and its purpose.
    git clone https://github.com/yourusername/project-name.git
 
 2. **Navigate into the project directory**
-  cd project-name
 
-3. **Install dependencies**
+cd project-name
+
+4. **Install dependencies**
+
    npm install
 
 ## Usage
