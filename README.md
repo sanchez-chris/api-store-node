@@ -1,9 +1,8 @@
-# Project Name
+# Store with Node.js
 
 A brief description of what the API does and its purpose.
 
-## Table of Contents# Project Name
-
+## Table of Contents
 A brief description of what the API does and its purpose.
 
 ## Table of Contents
