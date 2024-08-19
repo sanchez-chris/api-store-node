@@ -7,6 +7,8 @@ const { getCategorySchema, createCategorySchema, updateCategorySchema, deleteCat
 const router = express.Router();
 const service = new CategoryService();
 
+
+
 router.get('/', (req, res) => {
   const categories = service.find();
   res.json(categories);
