@@ -1,9 +1,6 @@
 # Store with Node.js
 
-A brief description of what the API does and its purpose.
-
-## Table of Contents
-A brief description of what the API does and its purpose.
+A brief description of what the API does.
 
 ## Table of Contents
 
