@@ -13,11 +13,11 @@ A brief description of what the API does.
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/yourusername/project-name.git
+   git clone https://github.com/sanchez-chris/api-store-node.git
 
 2. **Navigate into the project directory**
 
-   cd project-name
+   cd api-store-node
 
 4. **Install dependencies**
 
