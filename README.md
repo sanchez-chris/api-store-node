@@ -27,13 +27,13 @@ A brief description of what the API does.
 1. **Start the server**
   
     npm start
-    The server will start on the port specified in your environment variables or default to 3001.
+    The server will start on the port specified in your environment variables or default to 3000.
 
 2. **Make API requests**
    
     You can use tools like Postman or Insomnia to test the endpoints.
     
-    There are also docs available with Swagger at localhost:3001/api/v1/docs (not yet completed)
+    There are also docs available with Swagger at localhost:3000/api/v1/docs
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
