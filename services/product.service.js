@@ -25,7 +25,6 @@ class ProductService {
   }
 
   create(data) {
-
     const newProduct = {
       id: faker.string.uuid(),
       ...data
