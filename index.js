@@ -8,7 +8,7 @@ const routerApi = require('./v1/routes');
 const { errorHandler, logErrors, boomErrorHandler } = require('./middlewares/error.handle');
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use("/api/v1/categories", v1CategoriesRouter);
@@ -45,8 +45,3 @@ app.use(boomErrorHandler);
 app.use(errorHandler);
 
 module.exports = app;
-
-
-
-
-
