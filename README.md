@@ -27,11 +27,13 @@ A brief description of what the API does.
 1. **Start the database with docker**
    
     docker-compose up -d postgres
+   
     The database will start
 
 3. **Start the server**
    
     npm run dev
+   
     The server will start on the port specified in your environment variables or default to 3000.
 
 5. **Make API requests**
