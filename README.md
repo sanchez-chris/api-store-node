@@ -25,14 +25,16 @@ A brief description of what the API does.
 
 ## Usage
 1. **Start the database with docker**
+   
     docker-compose up -d postgres
     The database will start
 
-2. **Start the server**
+3. **Start the server**
+   
     npm run dev
     The server will start on the port specified in your environment variables or default to 3000.
 
-3. **Make API requests**
+5. **Make API requests**
    
     You can use tools like Postman or Insomnia to test the endpoints.
     
