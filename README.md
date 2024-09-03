@@ -24,12 +24,15 @@ A brief description of what the API does.
    npm install
 
 ## Usage
-1. **Start the server**
-  
-    npm start
+1. **Start the server and the database with docker**
+2. 
+    docker-compose up -d postgres
+    The database will start
+   
+    npm run dev
     The server will start on the port specified in your environment variables or default to 3000.
 
-2. **Make API requests**
+1. **Make API requests**
    
     You can use tools like Postman or Insomnia to test the endpoints.
     
