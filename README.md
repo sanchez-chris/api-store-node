@@ -24,19 +24,19 @@ A brief description of what the API does.
    npm install
 
 ## Usage
-1. **Start the server and the database with docker**
-2. 
+1. **Start the database with docker**
     docker-compose up -d postgres
     The database will start
-   
+
+2. **Start the server**
     npm run dev
     The server will start on the port specified in your environment variables or default to 3000.
 
-1. **Make API requests**
+3. **Make API requests**
    
     You can use tools like Postman or Insomnia to test the endpoints.
     
-    There are also docs available with Swagger at localhost:3000/api/v1/docs
+    There are docs available with Swagger at localhost:3000/api/v1/docs
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
