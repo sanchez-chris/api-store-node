@@ -1,21 +1,17 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, Sequelize } = require('sequelize');
 
-const CATEGORY_TABLE = 'users';
+const CATEGORY_TABLE = 'categories';
 
 const CategorySchema = {
   id: {
     allowNull: false,
     autoIncrement: true,
     primaryKey: true,
-    type: DataTypes.INTEGER,
-    unique: true,
-    field: 'id'
+    type: DataTypes.INTEGER
   },
   name: {
     allowNull: false,
-    type: DataTypes.STRING,
-    field: 'name'
-  }
+    type: DataTypes.STRING  }
 }
 
 class Category extends Model {

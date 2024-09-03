@@ -41,5 +41,4 @@ class User extends Model {
   }
 }
 
-
 module.exports = { USER_TABLE, UserSchema, User }

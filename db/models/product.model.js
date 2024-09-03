@@ -1,6 +1,6 @@
-const { Model, DataTypes, sequelize } = require('sequelize');
+const { Model, DataTypes, Sequelize } = require('sequelize');
 
-const PRODUCT_TABLE = 'users';
+const PRODUCT_TABLE = 'products';
 
 const ProductSchema = {
   id: {
